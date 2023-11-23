@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style>
+            body {
+                font-family:"Brush Script MT", cursive;
+                font-size: 22px;
+                background-color: rgb(146, 139, 63);
+            }
+            .copper {
+                color: brown;
+                font-size: 120%
+            }
+            .silver {
+                color:silver;
+                font-size: 120%
+            }
+            table, th, td {
+            border:1px solid black;
+            text-align:center;
+            }
+        </style>
         <title>The Adventurer Rest</title>
     </head>
     <body>
@@ -14,74 +33,128 @@
         </header>
         <section id="recomendations">
             <h2><u>Recomendations</u></h2>
-            <div class="dish">
-                <h3>Roasted salamander</h3>
-                <img src="roasted_salamander.png" alt="Plate with a roasted salamander">
-                <p class="description">Salamander roasted on its own juices, leaving the skin crunchy and the meat tender.<br>
-                <b class="price">1 silver coin</b><br>
-                <i class="buff"></iid>+1 dexterity during 1 hour</i></p>
-            </div>
-            <div class="dish">
-                <h3>Rabbit stew</h3>
-                <img src="rabbit_stew.png" alt="Plate of stewed rabbit">
-                <p class="description">Tender rabbit stewed with potatoe, carrots and onions.<br>
-                <b class="price">8 copper coins</b><br>
-                <i class="buff">Restores +4 HP after a long rest</i></p>
-            </div>
-            <div class="dish">
-                <h3>Stuffed cabbage</h3>
-                <img src="stuffed_cabbage.png" alt="Plate with a cabbage, seemingly stuffed with other vegetables">
-                <p class="description">A whole cabbage stuffed with carrot, green pepper, onion and tomatoe. Very crunchy.<br>
-                <b class="price">4 copper coins</b><br>
-                <i class="buff">Restores +2 HP after a long rest (+4 if elf)</i></p>
-            </div>
-            <div class="dish">
-                <h3>Harpy egg omellete</h3>
-                <img src="harpy_egg_omellete.png">
-                <p class="description">Omellete made with an egg from an harpy accompanied with tomato sauce and erbs.<br>
-                <b class="price">5 Silver coins</b><br>
-                <i class="buff">+2 dexteritu during 1 hour</i></p>
-            </div>
+               <div class="dish">
+                    <h3>Roasted salamander</h3>
+                        <table style="width:45%";>
+                            <tr>
+                               <td style="width:10%"><img src="roasted_salamander.png" alt="Plate with a roasted salamander"></td>
+                               <td><p class="description">Salamander roasted on its own juices, leaving the skin crunchy and the meat tender.<br>
+                                                          It can be acompanied with smash potatoes and a some bread</p></td>
+                            </tr>
+                            <tr>
+                               <td><b class="price silver">1 silver coin</b></td>
+                            </tr>
+                       </table>
+                    <i class="buff">+1 dexterity during 1 hour</i>
+               </div>
+               <div class="dish">
+                   <h3>Rabbit stew</h3>
+                        <table style="width:45%";>
+                            <tr>
+                                <td style="width:10%"><img src="rabbit_stew.png" alt="Plate of stewed rabbit"></td>
+                                <td><p class="description">Tender rabbit stewed with potatoe, carrots and onions.</td>
+                            </tr>
+                            <tr>
+                                <td><b class="price copper">8 copper coins</b></td>
+                            </tr>
+                        </table>
+                    <i class="buff">Restores +4 HP after a long rest</i>
+               </div>
+               <div class="dish">
+                    <h3>Stuffed cabbage</h3>
+                        <table style="width:45%";>
+                            <tr>
+                                <td style="width:10%"><img src="stuffed_cabbage.png" alt="Plate with a cabbage, seemingly stuffed with other vegetables"></td>
+                                <td><p class="description">A whole cabbage stuffed with carrot, green pepper, onion and tomatoe. Very crunchy.</p></td>
+                            </tr>
+                            <tr>
+                                <td><b class="price copper">4 copper coins</b><br></td>
+                            </tr>
+                        </table>
+                    <i class="buff">Restores +2 HP after a long rest (+4 if elf)</i>
+               </div>
+               <div class="dish">
+                    <h3>Harpy egg omellete</h3>
+                        <table style="width:45%";>
+                            <tr>
+                                <td style="width:10%"><img src="harpy_egg_omellete.png"></td>
+                                <td><p class="description">Omellete made with an egg from an harpy accompanied with tomato sauce and herbs.</p></td>
+                            </tr>
+                            <tr>
+                                <td><b class="price silver">5 Silver coins</b></td>
+                            </tr>
+                        </table>
+                    <i class="buff">+2 dexteritu during 1 hour</i>
+               </div>
         </section>
         <section id="food">
             <h2>Food</h2>
-            <div class="dish">
-                <h3>The farmer steak</h3>
-                <p class="description">Baked potatoes cuted in half with oil, onions and salt.<br>
-                <b class="price">2 Copper coins</b><br>
-                <i class="buff">Restores +2 HP after a long rest</i></p>
+               <div class="dish">
+                    <table style="width:45%";>
+                        <tr>
+                            <td style="width:20%"><h3>The farmer steak</h3></td>
+                            <td><p class="description">Baked potatoes cuted in half with oil, onions and salt.</p></td>
+                            <td style="width:15%"><p><b class="price copper">2 Copper coins</b></p></td>
+                        </tr>
+                    </table>
+                <i class="buff">Restores +2 HP after a long rest</i>
             </div>
+            <br>
             <div class="dish">
-                <h3>Stuffed larva</h3>
-                <p class="description">A very big larva stuffed with a variety of nuts and raisins, baked on its own juices.<br>
-                <b class="price">4 Silver coins</b><br>
-                <i class="buff">+1 Wisdom (+2 if elf) during 1 hour</i></p>
+                <table style="width:45%";>
+                    <tr>
+                        <td style="width:20%"><h3>Stuffed larva</h3></td>
+                        <td><p class="description">A very big larva stuffed with a variety of nuts and raisins, baked on its own juices.</p></td>
+                        <td style="width:15%"><p><b class="price silver">4 Silver <br> coins</b></p></td>
+                    </tr>
+                </table>
+                <i class="buff">+1 Wisdom (+2 if elf) during 1 hour</i>
             </div>
+            <br>
             <div class="dish">
-                <h3>Stew of deer and beer</h3>
-                <p class="description">Stewed deer with onions and carrots with a hint of dark beer.<br>
-                <b class="price">6 Silver coins</b><br>
-                <i class="buff">+1 Endurance (+1 Endurance and strength if dwarf) during 1 hour</i></p>
+                <table style="width:45%";>
+                    <tr>
+                        <td><h3>Stew of <br> deer and beer</h3></td>
+                        <td><p class="description">Stewed deer with onions and carrots with a hint of dark beer.</p></td>
+                        <td style="width:15%"><p><b class="price silver">6 Silver <br> coins</b></p></td>
+                    </tr>
+                </table>
+                <i class="buff">+1 Endurance (+1 Endurance and strength if dwarf) during 1 hour</i>
             </div>
+            <br>
             <div class="dish">
-                <h3></h3>
-                <p class="description"><br>
-                <b class="price"></b><br>
-                <i class="buff"></i></p>
+                <table style="width:45%";>
+                    <tr>
+                        <td><h3></h3></td>
+                        <td><p class="description"></p></td>
+                        <td style="width:15%"><p><b class="price"></b></p></td>
+                    </tr>
+                </table>
+                <p><i class="buff"></i></p>
             </div>
+            <br>
             <div class="dish">
-                <h3></h3>
-                <p class="description"><br>
-                <b class="price"></b><br>
-                <i class="buff"></i></p>
+                <table style="width:45%";>
+                    <tr>
+                        <td><h3></h3></td>
+                        <td><p class="description"></p></td>
+                        <td style="width:15%"><p><b class="price"></b></p></td>
+                    </tr>
+                </table>
+                <p><i class="buff"></i></p>
             </div>
+            <br>
             <div class="dish">
-                <h3></h3>
-                <p class="description"><br>
-                <b class="price"></b><br>
-                <i class="buff"></i></p>
+                <table style="width:45%";>
+                    <tr>
+                        <td><h3></h3></td>
+                        <td><p class="description"></p></td>
+                        <td style="width:15%"><p><b class="price"></b></p></td>
+                    </tr>
+                </table>
+                <p><i class="buff"></i></p>
             </div>
+            <br>
         </section>
-
     </body>
 </html>
