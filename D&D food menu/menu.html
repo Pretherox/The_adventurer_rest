@@ -53,11 +53,17 @@
                         <table style="width:45%">
                             <tr>
                                <td style="width:10%"><img src="roasted_salamander.png" alt="Plate with a roasted salamander"></td>
-                               <td><p class="description">Roasted salamander with its own juices, leaving the skin crunchy and the meat tender.<br>
-                                                          It can be acompanied with smash potatoes and a some bread</p></td>
+                               <td colspan="3"><p class="description">Roasted salamander with its own juices, leaving the skin crunchy and the meat tender.<br>
+                                                          It can be acompanied with smash potatoes and/or bread</p></td>
                             </tr>
                             <tr>
                                <td><b class="price silver">1 silver coin</b></td>
+                               <td style="width:20%"><input type="checkbox" id="select_menu_1"><label for="select_menu_1">Mark to order</label></td>
+                               <td>Acompany it with:
+                                   <input type="checkbox" id="add_1.1"/><label for="add_1.1">Smash Potatoes</label> 
+                                   <input type="checkbox" id="add_1.2"/><label for="add_1.2">Bread</label>
+                               <td><label for="number_of_1">How many? </label><input type="number" id="number_of_1" min="0" style=width:30px;></td>
+                               </td>
                             </tr>
                        </table>
                     <i class="buff">+1 dexterity during 1 hour</i>
@@ -67,11 +73,16 @@
                         <table style="width:45%">
                             <tr>
                                 <td style="width:10%"><img src="rabbit_stew.png" alt="Plate of stewed rabbit"></td>
-                                <td><p class="description">Tender rabbit stewed with potatoe, carrots and onions.<br>
-                                                           It comes with a pint and some bread.</p></td>
+                                <td colspan="3"><p class="description">Tender rabbit stewed with potatoe, carrots and onions.<br>
+                                                           It comes with a pint and/or bread.</p></td>
                             </tr>
                             <tr>
                                 <td><b class="price copper">8 copper coins</b></td>
+                                <td style="width:20%"><input type="checkbox" id="select_menu_2"><label for="select_menu_2">Mark to order</label></td>
+                               <td>Acompany it with:
+                                   <input type="checkbox" id="add_2.1"/><label for="add_2.1">Pint</label> 
+                                   <input type="checkbox" id="add_2.2"/><label for="add_2.2">Bread</label>
+                               <td><label for="number_of_2">How many? </label><input type="number" id="number_of_2" min="0" style=width:30px;></td>
                             </tr>
                         </table>
                     <i class="buff">Restores +4 HP after a long rest</i>
@@ -81,11 +92,15 @@
                         <table style="width:45%">
                             <tr>
                                 <td style="width:10%"><img src="stuffed_cabbage.png" alt="Plate with a cabbage, seemingly stuffed with other vegetables"></td>
-                                <td><p class="description">A whole cabbage stuffed with carrot, green pepper, onion and tomatoe. Very crunchy.<br>
+                                <td colspan="3"><p class="description">A whole cabbage stuffed with carrot, green pepper, onion and tomatoe. Very crunchy.<br>
                                                            It can be acompanied with some cheese.</p></td>
                             </tr>
                             <tr>
                                 <td><b class="price copper">4 copper coins</b><br></td>
+                                <td style="width:20%"><input type="checkbox" id="select_menu_3"><label for="select_menu_3">Mark to order</label></td>
+                                <td>Acompany it with:
+                                   <input type="checkbox" id="add_3.1"/><label for="add_3.1">Cheese</label> 
+                               <td><label for="number_of_3">How many? </label><input type="number" id="number_of_3" min="0" style=width:30px;></td>
                             </tr>
                         </table>
                     <i class="buff">Restores +2 HP after a long rest (+4 if elf)</i>
@@ -95,11 +110,13 @@
                         <table style="width:45%">
                             <tr>
                                 <td style="width:10%"><img src="harpy_egg_omellete.png"></td>
-                                <td><p class="description">Omellete made with an egg from an harpy accompanied with tomato sauce and herbs.<br>
+                                <td colspan="2"><p class="description">Omellete made with an egg from an harpy accompanied with tomato sauce and herbs.<br>
                                                            Bread and a pint included.</p></td>
                             </tr>
                             <tr>
                                 <td><b class="price silver">5 Silver coins</b></td>
+                                <td style="width:25%"><input type="checkbox" id="select_menu_4"><label for="select_menu_4">Mark to order</label></td>
+                               <td><label for="number_of_4">How many? </label><input type="number" id="number_of_4" min="0" style=width:30px;></td>
                             </tr>
                         </table>
                     <i class="buff">+2 dexteritu during 1 hour</i>
@@ -111,9 +128,13 @@
                     <table style="width:45%">
                         <tr>
                             <td style="width:20%"><h3>The farmer steak</h3></td>
-                            <td><p class="description">Two baked potatoes cuted in half and covered with oil, onions and salt.<br>
+                            <td rowspan="2"><p class="description">Two baked potatoes cuted in half and covered with oil, onions and salt.<br>
                                                        A true peasant clasic meal.</p></td>
-                            <td style="width:15%"><p><b class="price copper">2 Copper coins</b></p></td>
+                            <td style="width:18%"><p><b class="price copper">2 Copper coins</b></p></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="select_menu_5"><label for="select_menu_5">Mark to order</label></td>
+                            <td><label for="number_of_5">How many? </label><input type="number" id="number_of_5" min="0" style=width:30px;></td>
                         </tr>
                     </table>
                 <i class="buff">Restores +2 HP after a long rest</i>
@@ -123,8 +144,12 @@
                 <table style="width:45%">
                     <tr>
                         <td style="width:20%"><h3>Stuffed larva</h3></td>
-                        <td><p class="description">A giant larva of the forest stuffed with a variety of nuts and mushrooms, baked on its own juices.</p></td>
-                        <td style="width:15%"><p><b class="price silver">4 Silver <br> coins</b></p></td>
+                        <td rowspan="2"><p class="description">A giant larva of the forest stuffed with a variety of nuts and mushrooms, baked on its own juices.</p></td>
+                        <td style="width:18%"><p><b class="price silver">4 Silver coins</b></p></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="select_menu_6"><label for="select_menu_6">Mark to order</label></td>
+                        <td><label for="number_of_6">How many? </label><input type="number" id="number_of_6" min="0" style=width:30px;></td>
                     </tr>
                 </table>
                 <i class="buff">+1 Wisdom (+2 if elf) during 1 hour</i>
@@ -134,8 +159,13 @@
                 <table style="width:45%">
                     <tr>
                         <td><h3>Stew of <br> deer and beer</h3></td>
-                        <td><p class="description">Stewed deer with onions and carrots with a hint of dark beer.</p></td>
-                        <td style="width:15%"><p><b class="price silver">6 Silver <br> coins</b></p></td>
+                        <td rowspan="2"><p class="description">Stewed deer with onions and carrots with a hint of dark beer.<br>
+                                                               It has a strong flavour and the dark beer gives it a spicy touch.</p></td>
+                        <td style="width:18%"><p><b class="price silver">6 Silver coins</b></p></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="select_menu_7"><label for="select_menu_7">Mark to order</label></td>
+                        <td><label for="number_of_7">How many? </label><input type="number" id="number_of_7" min="0" style=width:30px;></td>
                     </tr>
                 </table>
                 <i class="buff">+1 constitution (+1 constitution and strength if dwarf) during 1 hour</i>
@@ -146,8 +176,16 @@
                     <tr>
                         <td><h3>Slime soup</h3></td>
                         <td><p class="description">A dense and slimy soup with soft flavour, easy to digest, with <br>
-                                                   a tender slime core in the center.</p></td>
-                        <td style="width:15%"><p><b class="price silver">1 Silver <br> coin</b></p></td>
+                                                   a tender slime core in the center.<br>
+                                                   The texture and flavour changes depending of the slime colour.</p></td>
+                        <td style="width:18%"><p><b class="price silver">1 Silver coin</b></p></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="select_menu_8"><label for="select_menu_8">Mark to order</label></td>
+                        <td><input type="radio" id="green_slime"><label for="green_slime">Green Slime </label>
+                            <input type="radio" id="blue_slime"><label for="blue_slime">Blue Slime</label> 
+                            <input type="radio" id="red_slime"><label for="red_slime">Red Slime</label></td>
+                        <td><label for="number_of_8">How many? </label><input type="number" id="number_of_8" min="0" style=width:30px;></td>
                     </tr>
                 </table>
                 <i class="buff">+1 Inteligence during 1 hour</i>
@@ -157,9 +195,13 @@
                 <table style="width:45%">
                     <tr>
                         <td><h3>Vegetable soup</h3></td>
-                        <td><p class="description">A warm soup made with carrot, wild mushrooms and potatoe.<br>
-                                                   Very light.</p></td>
-                        <td style="width:15%"><p><b class="price copper">2 Copper coins</b></p></td>
+                        <td rowspan="2"><p class="description">A warm soup made with carrot, wild mushrooms and potatoe.<br>
+                                                   Very light and perfect for rainy and cold days.</p></td>
+                        <td style="width:18%"><p><b class="price copper">2 Copper coins</b></p></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="select_menu_9"><label for="select_menu_9">Mark to order</label></td>
+                        <td><label for="number_of_9">How many? </label><input type="number" id="number_of_9" min="0" style=width:30px;></td>
                     </tr>
                 </table>
                 <i class="buff">Heals +1 HP after a long rest(+2 if elf)</i>
@@ -168,11 +210,17 @@
             <div class="dish">
                 <table style="width:45%";>
                     <tr>
-                        <td><h3>Fey crown salad</h3></td>
-                        <td><p class="description">A salad made with different flowers, some of them said to be magic.
-                                                   Changes depending of the season.
+                        <td><h3>Fey flower <br> crown salad</h3></td>
+                        <td><p class="description">A salad made with different wild edible and magic flowers.<br>
+                                                   The flowers used as ingredients change depending of the season.<br>
+                                                   One of the faes favourite dishes.
                         </p></td>
-                        <td style="width:15%"><p><b class="price gold">1 Gold coin</b></p></td>
+                        <td style="width:18%"><p><b class="price gold">1 Gold coin</b></p></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="select_menu_10"><label for="select_menu_10">Mark to order</label></td>
+                        <td><small>The person in charge is not responsible for the magical effects of the dish</small></td>
+                        <td><label for="number_of_10">How many? </label><input type="number" id="number_of_10" min="0" style=width:30px;></td>
                     </tr>
                 </table>
                 <i class="buff">Random minor buff (x2 if Gnome)</i>
@@ -208,11 +256,13 @@
                         <table style="width:45%">
                             <tr>
                                <td style="width:15%"><img class="drink_picture" src="beer.jpg" alt="A mug of beer"></td>
-                               <td><p class="description">The most clasic drink. A mug filled to the top with our best beer.<br>
+                               <td colspan="2"><p class="description">The most clasic drink. A mug filled to the top with our best beer.<br>
                                                           Especially foamy and cold with a fruity tone.</p></td>
                             </tr>
                             <tr>
-                               <td><b class="price copper">2 copper coins</b></td>
+                               <td style="width:20%"><b class="price copper">2 copper coins</b></td>
+                               <td><input type="checkbox" id="select_menu_11"><label for="select_menu_11">Mark to order</label></td>
+                               <td><label for="number_of_11">How many? </label><input type="number" id="number_of_11" min="0" style=width:30px;></td>
                             </tr>
                        </table>
                     <i class="buff">Ingest enough and gives the "drunk" state</i>
@@ -221,11 +271,13 @@
                 <h3>Wine</h3>
                     <table style="width:45%">
                         <tr>
-                           <td style="width:15%"><img class="drink_picture" src="wine.jpg" alt="An small crystal flask with wine"></td>
-                           <td><p class="description">A more refined drink, specially good to drink with something to eat.</p></td>
+                           <td style="width:20%"><img class="drink_picture" src="wine.jpg" alt="An small crystal flask with wine"></td>
+                           <td colspan="2"><p class="description">A more refined drink, specially good to drink with something to eat.</p></td>
                         </tr>
                         <tr>
                            <td><b class="price copper">5 copper coin</b></td>
+                           <td><input type="checkbox" id="select_menu_12"><label for="select_menu_12">Mark to order</label></td>
+                           <td><label for="number_of_12">How many? </label><input type="number" id="number_of_12" min="0" style=width:30px;></td>
                         </tr>
                    </table>
                    <i class="buff">Ingest enough and gives the "drunk" state</i>
@@ -233,12 +285,14 @@
                 <h3>Elven wine</h3>
                     <table style="width:45%">
                         <tr>
-                           <td style="width:15%"><img class="drink_picture" src="elf_wine.jpg" alt="An ornamented crystal flask with a yellow liquid"></td>
-                           <td><p class="description">Made on the elven lands, this wine has an speciall sweet tone and is told<br>
+                           <td style="width:20%"><img class="drink_picture" src="elf_wine.jpg" alt="An ornamented crystal flask with a yellow liquid"></td>
+                           <td colspan="2"><p class="description">Made on the elven lands, this wine has an speciall sweet tone and is told<br>
                                                       to be able to sharp your senses. Tough it's fragancy could numb your thinking.</p></td>
                         </tr>
                         <tr>
                            <td><b class="price silver">2 silver coin</b></td>
+                           <td><input type="checkbox" id="select_menu_13"><label for="select_menu_13">Mark to order</label></td>
+                           <td><label for="number_of_13">How many? </label><input type="number" id="number_of_13" min="0" style=width:30px;></td>
                         </tr>
                    </table>
                    <i class="buff">+1 Dexterity (+2 if elf) -1 Wisdom during 5 min</i>
@@ -247,12 +301,14 @@
                 <h3>Fire water</h3>
                     <table style="width:45%">
                         <tr>
-                           <td style="width:15%"><img class="drink_picture" src="fire_water.jpg" alt="A glass bottle well made. It's content seems to glow"></td>
-                           <td><p class="description">A very strong drink that taste like fire and warms your insides in seconds.<br>
+                           <td style="width:20%"><img class="drink_picture" src="fire_water.jpg" alt="A glass bottle well made. It's content seems to glow"></td>
+                           <td colspan="2"><p class="description">A very strong drink that taste like fire and warms your insides in seconds.<br>
                                                       It gives to the body an unexpected vitality at the cost of your ability to walk straight</p></td>
                         </tr>
                         <tr>
                            <td><b class="price copper">8 copper coins</b></td>
+                           <td><input type="checkbox" id="select_menu_14"><label for="select_menu_14">Mark to order</label></td>
+                           <td><label for="number_of_14">How many? </label><input type="number" id="number_of_14" min="0" style=width:30px;></td>
                         </tr>
                    </table>
                    <i class="buff">+1 constitution (+2 if dwarf) -2 Intelligence during 5 min</i>
@@ -261,13 +317,15 @@
                 <h3>The rusted breath</h3>
                     <table style="width:45%">
                         <tr>
-                           <td style="width:15%"><img class="drink_picture" src="rusted_breath.jpg" alt="Green glass blottle well shealed"></td>
-                           <td><p class="description">It smells like iron and tastes like iron.<br>
+                           <td style="width:20%"><img class="drink_picture" src="rusted_breath.jpg" alt="Green glass blottle well shealed"></td>
+                           <td colspan="2"><p class="description">It smells like iron and tastes like iron.<br>
                                                       This drink was made by a miner that wanted to drink something that made his work easyer.<br>
                                                       Hits the stomach like a punch, but it's said that it gives a sense of strenght.</p></td>
                         </tr>
                         <tr>
                            <td><b class="price silver">1 silver coin</b></td>
+                           <td><input type="checkbox" id="select_menu_15"><label for="select_menu_15">Mark to order</label></td>
+                           <td><label for="number_of_15">How many? </label><input type="number" id="number_of_15" min="0" style=width:30px;></td>
                         </tr>
                    </table>
                    <i class="buff"></i>
@@ -276,15 +334,19 @@
                 <h3>Blessed dreams</h3>
                     <table style="width:45%">
                         <tr>
-                           <td style="width:15%"><img class="drink_picture" src="Blessed_dreams.jpg" alt="A very well made glass picturing some kind of flaying bug"></td>
-                           <td><p class="description">It started like a prank, but now is a helpfull hand.<br>
+                           <td style="width:20%"><img class="drink_picture" src="Blessed_dreams.jpg" alt="A very well made glass picturing some kind of flaying bug"></td>
+                           <td colspan="2"><p class="description">It started like a prank, but now is a helpfull hand.<br>
                                                       Made with some magic flowers, it makes any nap like a whole day worth of sleep.</p></td>
                         </tr>
                         <tr>
                            <td><b class="price gold">2 gold coins</b></td>
+                           <td><input type="checkbox" id="select_menu_16"><label for="select_menu_16">Mark to order</label></td>
+                           <td><label for="number_of_16">How many? </label><input type="number" id="number_of_16" min="0" style=width:30px;></td>
                         </tr>
                    </table>
                    <i class="buff">A short rest works like a long rest</i>
+                   <hr>
+                   <p>The inkeeper, Pretherox, thanks you for your visit</p>
                </div>
         </section>
     </body>
